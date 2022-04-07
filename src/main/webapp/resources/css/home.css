@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.intro_info{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.event_image{
+    margin-top: 40px;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    background-image: url('../img/soccer.jpg');
+    border-radius: 12px;
+}
+
+.icon-bar{
+    margin-top: 40px;
+    margin-left: 10%;
+    width: 80%;
+    height: 100px;
+    background-color: #555;
+}
+
+.icon-bar a{
+    float: left;
+    transition: all 0.3s ease;
+    color: white;
+    width: 20%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active{
+    background-color: #04aa6d;
+}
+
+/* 팀소개 */
+
+#teamIntro{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.teams{
+    margin-top: 50px;
+    background-color: tomato;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    line-height: 5;
+}
