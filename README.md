@@ -34,6 +34,8 @@
 * JavaScript
 * jQuery
 * AWS
+## 패키징 구조
+
 
 ## 화면정의서
 
