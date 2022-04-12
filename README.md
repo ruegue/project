@@ -35,7 +35,7 @@
 * jQuery
 * AWS
 ## 패키징 구조
-
+![패키지구조](https://user-images.githubusercontent.com/95623005/162899156-cb865559-88f0-4b00-bb9c-ad81b27aff18.png)
 
 ## 화면정의서
 
