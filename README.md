@@ -19,12 +19,21 @@
 * Intellij
 * STS(Spring Tool Suite)
 * GitHub
-* Mysql
+* Mysql Workbench
 * Visual Studio Code
 * Postman
 
 ## 사용기술
 
+* Java 11
+* Spring Framework
+* Mysql
+* Mybatis
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* AWS
 
 ## 화면정의서
 
