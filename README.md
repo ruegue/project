@@ -63,4 +63,11 @@ HTML과 CSS로 화면을 디자인하고 JSTL과 EL로 로그인을 하기 전�
 ![게시판](https://user-images.githubusercontent.com/95623005/162906624-c55b4782-df47-41e7-b98e-96c90b004364.png)
 제목과 글쓴이를 범위로 정해서 게시글을 검색할 수 있게 DB를 작정했습니다 그리고 이를 JSTL로 반영했으며 나중에 ajax로 바꿔서 코드를 짜보려고 합니다.(2022-4-12~)
 
+### 게시판 읽기
+![게시판 일기](https://user-images.githubusercontent.com/95623005/162908207-8755291d-4034-441b-b9d7-9d54e84154d2.png)
+DB에서 BoardDto에 저장되어있던 정보를 가져와서 보여줍니다.
+
+또한 읽기만 가능하게 하기 위해 readonly로 수정을 못하게 설정합니다.
+
+session에 있는 id를 확인한후 글쓴이와 동일 id이면 수정버튼과 삭제버튼이 나타나게 JSTL과 EL을 활용하여 만들어주었습니다.
 
