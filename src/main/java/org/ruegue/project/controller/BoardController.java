@@ -11,9 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.ruegue.project.domain.BoardDto;
+import org.ruegue.project.domain.CommentPageHandler;
 import org.ruegue.project.domain.PageHandler;
 import org.ruegue.project.domain.SearchCondition;
 import org.ruegue.project.service.BoardService;
+import org.ruegue.project.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,6 +30,9 @@ public class BoardController {
 	
 	@Autowired
 	BoardService boardService;
+
+	@Autowired
+	CommentService commentservice;
 	
 	@PostMapping("/remove")
 	public String remove(Integer bno , SearchCondition sc, RedirectAttributes rattr, Model m, HttpSession session) {
@@ -70,8 +75,10 @@ public class BoardController {
 	}
 	
 	@GetMapping("/write")
-	public String write(Model m) {
+	public String write(BoardDto boardDto, Model m) {
+		boardDto.setBno(1);
 		m.addAttribute("mode", "new");
+		m.addAttribute("boardDto", boardDto);
 		
 		return "board";
 	}
@@ -99,10 +106,11 @@ public class BoardController {
 	@GetMapping("/read")
 	public String read(Integer bno, SearchCondition sc, RedirectAttributes rattr, Model m) {
 		try {
+
 			BoardDto boardDto = boardService.read(bno);
 			m.addAttribute(boardDto);
 			m.addAttribute("sc" ,sc);
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			rattr.addFlashAttribute("sc" ,sc);

@@ -5,7 +5,9 @@
 <configuration>
     <typeAliases>
     	<typeAlias alias="BoardDto" type="org.ruegue.project.domain.BoardDto"/>
+        <typeAlias alias="CommentDto" type="org.ruegue.project.domain.CommentDto"/>
         <typeAlias alias="UserDto" type="org.ruegue.project.domain.UserDto"/>
+        <typeAlias alias="CommentPageHandler" type="org.ruegue.project.domain.CommentPageHandler"/>
         <typeAlias alias="SearchCondition" type="org.ruegue.project.domain.SearchCondition"/>
     </typeAliases>
 </configuration>

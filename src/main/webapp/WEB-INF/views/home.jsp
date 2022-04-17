@@ -35,6 +35,7 @@
         <a href="#">중고나라</a>
         <a href="<c:url value='board/list'/>">커뮤니티</a>
     </div>
+    <div id="commentList"></div>
 </body>
 </html>
 
